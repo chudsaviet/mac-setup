@@ -22,7 +22,8 @@ brew install \
 	youtube-dl \
 	telnet \
 	pwgen \
-	git
+	git \
+	kubernetes-cli
 
 pip install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools virtualenv
@@ -38,4 +39,5 @@ brew cask install \
 	visual-studio-code \
 	java \
 	docker \
-	vlc
+	vlc \
+	typora
