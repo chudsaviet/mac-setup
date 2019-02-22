@@ -23,7 +23,9 @@ brew install \
 	telnet \
 	pwgen \
 	git \
-	kubernetes-cli
+	kubernetes-cli \
+	hping \
+	graphviz
 
 pip install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools virtualenv
@@ -40,4 +42,5 @@ brew cask install \
 	java \
 	docker \
 	vlc \
-	typora
+	typora \
+	maccpuid
