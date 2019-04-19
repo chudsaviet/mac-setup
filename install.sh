@@ -25,7 +25,8 @@ brew install \
 	git \
 	kubernetes-cli \
 	hping \
-	graphviz
+	graphviz \
+	coreutils
 
 pip install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools virtualenv
