@@ -26,7 +26,8 @@ brew install \
 	kubernetes-cli \
 	hping \
 	graphviz \
-	coreutils
+	coreutils \
+	watch
 
 pip install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools virtualenv
@@ -44,4 +45,5 @@ brew cask install \
 	docker \
 	vlc \
 	typora \
-	maccpuid
+	maccpuid \
+	keepingyouawake
