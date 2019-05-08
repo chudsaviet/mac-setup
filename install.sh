@@ -27,7 +27,8 @@ brew install \
 	hping \
 	graphviz \
 	coreutils \
-	watch
+	watch \
+	speedtest-cli
 
 pip install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools virtualenv
