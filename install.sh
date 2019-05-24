@@ -47,4 +47,5 @@ brew cask install \
 	vlc \
 	typora \
 	maccpuid \
-	keepingyouawake
+	keepingyouawake \
+	prusaslicer
