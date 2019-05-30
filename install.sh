@@ -28,7 +28,8 @@ brew install \
 	graphviz \
 	coreutils \
 	watch \
-	speedtest-cli
+	speedtest-cli \
+	imagemagick
 
 pip install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools virtualenv
@@ -47,4 +48,5 @@ brew cask install \
 	vlc \
 	typora \
 	maccpuid \
-	keepingyouawake
+	keepingyouawake \
+	krita
