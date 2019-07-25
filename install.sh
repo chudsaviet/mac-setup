@@ -58,3 +58,4 @@ brew cask install \
 
 echo "Installing Rust toolchain..."
 rustup-init -y
+rustup component add rustfmt
