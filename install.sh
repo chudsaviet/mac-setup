@@ -34,7 +34,7 @@ brew install \
 	imagemagick \
 	rustup-init
 
-echo "Updating Python tools..."
+echo "Updatqing Python tools..."
 pip install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools virtualenv
 
@@ -54,7 +54,8 @@ brew cask install \
 	typora \
 	maccpuid \
 	keepingyouawake \
-	dropbox
+	dropbox \
+	freecad
 
 echo "Installing Rust toolchain..."
 rustup-init -y
