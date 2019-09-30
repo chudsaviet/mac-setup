@@ -32,7 +32,8 @@ brew install \
 	watch \
 	speedtest-cli \
 	imagemagick \
-	rustup-init
+	rustup-init \
+	go
 
 echo "Updatqing Python tools..."
 pip install --upgrade pip setuptools
