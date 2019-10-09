@@ -1,5 +1,7 @@
 #!/bin/sh
+set -v
 
+echo "Installing commandline utilities..."
 brew install \
 	xz \
 	zstd \
@@ -29,11 +31,15 @@ brew install \
 	coreutils \
 	watch \
 	speedtest-cli \
-	imagemagick
+	imagemagick \
+	rustup-init \
+	go
 
+echo "Updatqing Python tools..."
 pip install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools virtualenv
 
+echo "Installing GUI applications..."
 brew cask install \
 	iterm2 \
 	firefox \
@@ -49,4 +55,9 @@ brew cask install \
 	typora \
 	maccpuid \
 	keepingyouawake \
-	prusaslicer
+	prusaslicer \
+	dropbox \
+	freecad
+
+echo "Installing Rust toolchain..."
+rustup-init -y
