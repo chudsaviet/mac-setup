@@ -49,5 +49,4 @@ brew cask install \
 	typora \
 	maccpuid \
 	keepingyouawake \
-	krita \
 	prusaslicer
