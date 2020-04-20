@@ -13,7 +13,6 @@ brew install \
 	micro \
 	bat \
 	httpie \
-	python2 \
 	python3 \
 	pyenv \
 	maven \
@@ -57,7 +56,7 @@ brew cask install \
 	keepingyouawake \
 	prusaslicer \
 	dropbox \
-	freecad
+	autodesk-fusion360
 
 echo "Installing Rust toolchain..."
 rustup-init -y
