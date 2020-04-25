@@ -56,7 +56,8 @@ brew cask install \
 	keepingyouawake \
 	prusaslicer \
 	dropbox \
-	autodesk-fusion360
+	autodesk-fusion360 \
+	transmission
 
 echo "Installing Rust toolchain..."
 rustup-init -y
