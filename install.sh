@@ -57,7 +57,8 @@ brew cask install \
 	prusaslicer \
 	dropbox \
 	autodesk-fusion360 \
-	transmission
+	transmission \
+	intel-power-gadget
 
 echo "Installing Rust toolchain..."
 rustup-init -y
