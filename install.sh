@@ -5,6 +5,7 @@ echo "Installing commandline utilities..."
 brew install \
 	xz \
 	zstd \
+	pigz \
 	unzip \
 	htop \
 	mc \
