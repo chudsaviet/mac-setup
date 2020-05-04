@@ -59,7 +59,8 @@ brew cask install \
 	dropbox \
 	autodesk-fusion360 \
 	transmission \
-	intel-power-gadget
+	intel-power-gadget \
+	balenaetcher
 
 echo "Installing Rust toolchain..."
 rustup-init -y
