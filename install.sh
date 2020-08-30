@@ -34,7 +34,8 @@ brew install \
 	imagemagick \
 	rustup-init \
 	go \
-	protobuf
+	protobuf \
+        mage
 
 echo "Updatqing Python tools..."
 pip install --upgrade pip setuptools
