@@ -61,7 +61,8 @@ brew cask install \
 	dropbox \
 	autodesk-fusion360 \
 	transmission \
-	balenaetcher
+	balenaetcher \
+	free-download-manager
 
 echo "Installing Rust toolchain..."
 rustup-init -y
