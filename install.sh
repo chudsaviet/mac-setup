@@ -35,7 +35,8 @@ brew install \
 	rustup-init \
 	go \
 	protobuf \
-        mage
+	mage \
+	tmux
 
 echo "Updatqing Python tools..."
 pip install --upgrade pip setuptools
