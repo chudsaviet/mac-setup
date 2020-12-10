@@ -1,6 +1,10 @@
 #!/bin/sh
 set -v
 
+ARCH=$(arch)
+echo "Architecture is ${ARCH}"
+
+echo "All architectures:"
 echo "Installing commandline utilities..."
 brew install \
 	xz \
@@ -9,33 +13,20 @@ brew install \
 	unzip \
 	htop \
 	mc \
-	pv \
 	mtr \
-	micro \
-	bat \
 	httpie \
 	python3 \
 	pyenv \
-	maven \
-	gradle \
 	awscli \
 	jq \
-	ffmpeg \
 	youtube-dl \
-	telnet \
 	pwgen \
 	git \
-	kubernetes-cli \
 	hping \
-	graphviz \
 	coreutils \
 	watch \
 	speedtest-cli \
 	imagemagick \
-	rustup-init \
-	go \
-	protobuf \
-	mage \
 	tmux
 
 echo "Updatqing Python tools..."
@@ -43,7 +34,7 @@ pip install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools virtualenv
 
 echo "Installing GUI applications..."
-brew cask install \
+brew install --cask \
 	iterm2 \
 	firefox \
 	telegram \
@@ -52,7 +43,6 @@ brew cask install \
 	intellij-idea-ce \
 	pycharm-ce \
 	visual-studio-code \
-	java \
 	docker \
 	vlc \
 	typora \
@@ -65,8 +55,25 @@ brew cask install \
 	balenaetcher \
 	free-download-manager
 
-echo "Installing Rust toolchain..."
-rustup-init -y
+if [ x"${ARCH}" = x"x86_64" ]; then
+	echo "x86_64 specifics:"
 
-echo "Installing Intel power gadget"
-brew cask install intel-power-gadget
+	echo "Installing command line tools..."
+	brew install \
+		pv \
+		micro \
+		rust \
+		rustup-init \
+		bat \
+		java \
+		maven \
+		gradle \
+		ffmpeg \
+		go \
+		protobuf \
+		kubernetes-cli \
+		mage
+
+	echo "Updating Rust environment..."
+	rustup-init -y	
+fi
