@@ -27,7 +27,9 @@ brew install \
 	watch \
 	speedtest-cli \
 	imagemagick \
-	tmux
+	tmux \
+	protobuf \
+	mosh
 
 echo "Updatqing Python tools..."
 pip install --upgrade pip setuptools
@@ -70,7 +72,6 @@ if [ x"${ARCH}" = x"x86_64" ]; then
 		gradle \
 		ffmpeg \
 		go \
-		protobuf \
 		kubernetes-cli \
 		mage
 
