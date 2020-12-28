@@ -29,7 +29,8 @@ brew install \
 	imagemagick \
 	tmux \
 	protobuf \
-	mosh
+	mosh \
+	wget
 
 echo "Updatqing Python tools..."
 pip install --upgrade pip setuptools
