@@ -36,7 +36,7 @@ brew install \
 	gradle \
 	ffmpeg
 
-echo "Updatqing Python tools..."
+echo "Updating Python tools..."
 pip install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools virtualenv
 
