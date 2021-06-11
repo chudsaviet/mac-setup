@@ -1,8 +1,7 @@
 #!/bin/sh
 set -v
 
-ARCH=$(arch)
-echo "Architecture is ${ARCH}"
+echo "Architecture is $(arch)"
 
 echo "All architectures:"
 echo "Installing commandline utilities..."
@@ -17,24 +16,35 @@ brew install \
 	httpie \
 	python3 \
 	pyenv \
-	awscli \
 	jq \
 	youtube-dl \
 	pwgen \
 	git \
-	hping \
 	coreutils \
 	watch \
 	speedtest-cli \
 	imagemagick \
 	tmux \
-	protobuf \
 	mosh \
-	wget
+	wget \
+	pv \
+	micro \
+	rustup-init \
+	bat \
+	java \
+	maven \
+	gradle \
+	ffmpeg
 
 echo "Updatqing Python tools..."
 pip install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools virtualenv
+
+echo "Updating Rust environment..."
+	rustup-init -y
+
+echo "Adding Rust bin to PATH..."
+source $HOME/.cargo/env
 
 echo "Installing GUI applications..."
 brew install --cask \
@@ -49,6 +59,7 @@ brew install --cask \
 	docker \
 	vlc \
 	typora \
+	scroll-reverser \
 	maccpuid \
 	keepingyouawake \
 	prusaslicer \
@@ -58,24 +69,3 @@ brew install --cask \
 	balenaetcher \
 	free-download-manager
 
-if [ x"${ARCH}" = x"x86_64" ]; then
-	echo "x86_64 specifics:"
-
-	echo "Installing command line tools..."
-	brew install \
-		pv \
-		micro \
-		rust \
-		rustup-init \
-		bat \
-		java \
-		maven \
-		gradle \
-		ffmpeg \
-		go \
-		kubernetes-cli \
-		mage
-
-	echo "Updating Rust environment..."
-	rustup-init -y	
-fi
