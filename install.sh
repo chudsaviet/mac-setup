@@ -4,6 +4,10 @@ set -v
 echo "Architecture is $(arch)"
 
 echo "All architectures:"
+
+echo "Adding taps..."
+brew tap homebrew/cask-fonts
+
 echo "Installing commandline utilities..."
 brew install \
 	xz \
@@ -34,7 +38,8 @@ brew install \
 	java \
 	maven \
 	gradle \
-	ffmpeg
+	ffmpeg \
+	nanopb-generator
 
 echo "Updating Python tools..."
 pip install --upgrade pip setuptools
@@ -67,5 +72,7 @@ brew install --cask \
 	autodesk-fusion360 \
 	transmission \
 	balenaetcher \
-	free-download-manager
+	free-download-manager \
+	openscad \
+	font-fira-code
 
