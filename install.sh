@@ -39,20 +39,7 @@ brew install \
 	maven \
 	gradle \
 	ffmpeg \
-	nanopb-generator
-
-echo "Updating Python tools..."
-pip install --upgrade pip setuptools
-pip3 install --upgrade pip setuptools virtualenv
-
-echo "Updating Rust environment..."
-	rustup-init -y
-
-echo "Adding Rust bin to PATH..."
-source $HOME/.cargo/env
-
-echo "Installing GUI applications..."
-brew install --cask \
+	nanopb-generator \
 	iterm2 \
 	firefox \
 	telegram \
@@ -75,4 +62,17 @@ brew install --cask \
 	free-download-manager \
 	openscad \
 	font-fira-code
+
+echo "Updating Python tools..."
+pip install --upgrade pip setuptools
+pip3 install --upgrade pip setuptools virtualenv
+
+echo "Updating Rust environment..."
+	rustup-init -y
+
+echo "Adding Rust bin to PATH..."
+source $HOME/.cargo/env
+
+echo "Installing Rust apps from Cargo..."
+cargo install jless
 
