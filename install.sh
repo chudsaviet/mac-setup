@@ -1,5 +1,7 @@
 #!/bin/sh
 set -v
+set -e
+set -x
 
 echo "Architecture is $(arch)"
 
@@ -9,70 +11,96 @@ echo "Adding taps..."
 brew tap homebrew/cask-fonts
 
 echo "Installing commandline utilities..."
-brew install \
-	xz \
-	zstd \
-	pigz \
-	unzip \
-	htop \
-	mc \
-	mtr \
-	httpie \
-	python3 \
-	pyenv \
-	jq \
-	youtube-dl \
-	pwgen \
-	git \
-	coreutils \
-	watch \
-	speedtest-cli \
-	imagemagick \
-	tmux \
-	mosh \
-	wget \
-	pv \
-	micro \
-	rustup-init \
-	bat \
-	java \
-	maven \
-	gradle \
-	ffmpeg \
-	nanopb-generator \
-	iterm2 \
-	firefox \
-	telegram \
-	skype \
-	spectacle \
-	intellij-idea-ce \
-	pycharm-ce \
-	visual-studio-code \
-	docker \
-	vlc \
-	typora \
-	scroll-reverser \
-	maccpuid \
-	keepingyouawake \
-	prusaslicer \
-	dropbox \
+brew install --force \
 	autodesk-fusion360 \
-	transmission \
+	automake \
+	awscli \
 	balenaetcher \
+	bat \
+	binutils \
+	bison \
+	ccache \
+	clang-format \
+	clang-format@11 \
+	cmake \
+	coreutils \
+	docker \
+	docker \
+	doxygen \
+	dropbox \
+	firefox \
+	font-fira-code \
 	free-download-manager \
+	gawk \
+	git \
+	git-lfs \
+	gnu-sed \
+	go \
+	homebrew-ffmpeg/ffmpeg/ffmpeg \
+	htop \
+	httpie \
+	imagemagick \
+	iterm2 \
+	jq \
+	keepingyouawake \
+	libsvg \
+	lsusb \
+	lzip \
+	maccpuid \
+	make \
+	micro \
+	midnight-commander \
+	mkvtoolnix \
+	mosh \
+	mtr \
+	nanopb-generator \
+	nasm \
+	nghttp2 \
+	node \
+	ntp \
+	opencascade \
 	openscad \
-	font-fira-code
+	openssh \
+	openssl@3 \
+	pigz \
+	prusaslicer \
+	pv \
+	pwgen \
+	pyenv \
+	python \
+	rbenv-bundler \
+	ruby \
+	rustup-init \
+	scroll-reverser \
+	skype \
+	smartmontools \
+	spectacle \
+	speedtest-cli \
+	telegram \
+	telnet \
+	tmux \
+	transmission \
+	transmission-cli \
+	unzip \
+	visual-studio-code \
+	vlc \
+	vorbis-tools \
+	watch \
+	wget \
+	wxwidgets \
+	x265 \
+	yasm \
+	yt-dlp
 
 echo "Updating Python tools..."
 pip install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools virtualenv
 
 echo "Updating Rust environment..."
-	rustup-init -y
+rustup-init -y
 
 echo "Adding Rust bin to PATH..."
 source $HOME/.cargo/env
 
 echo "Installing Rust apps from Cargo..."
 cargo install jless
-
