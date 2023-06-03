@@ -90,7 +90,8 @@ brew install --force \
 	wxwidgets \
 	x265 \
 	yasm \
-	yt-dlp
+	yt-dlp \
+	influxdb-cli
 
 echo "Updating Python tools..."
 pip install --upgrade pip setuptools
