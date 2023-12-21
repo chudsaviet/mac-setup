@@ -12,7 +12,6 @@ brew tap homebrew/cask-fonts
 
 echo "Installing commandline utilities..."
 brew install --force \
-	autodesk-fusion360 \
 	automake \
 	awscli \
 	balenaetcher \
@@ -24,8 +23,6 @@ brew install --force \
 	clang-format@11 \
 	cmake \
 	coreutils \
-	docker \
-	docker \
 	doxygen \
 	dropbox \
 	firefox \
@@ -46,7 +43,7 @@ brew install --force \
 	libsvg \
 	lsusb \
 	lzip \
-	maccpuid \
+	cpuid \
 	make \
 	micro \
 	midnight-commander \
@@ -71,7 +68,6 @@ brew install --force \
 	rbenv-bundler \
 	ruby \
 	rustup-init \
-	scroll-reverser \
 	skype \
 	smartmontools \
 	spectacle \
