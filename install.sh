@@ -24,10 +24,7 @@ brew install --force \
 	cmake \
 	coreutils \
 	doxygen \
-	dropbox \
-	firefox \
 	font-fira-code \
-	free-download-manager \
 	gawk \
 	git \
 	git-lfs \
@@ -43,11 +40,9 @@ brew install --force \
 	libsvg \
 	lsusb \
 	lzip \
-	cpuid \
 	make \
 	micro \
 	midnight-commander \
-	mkvtoolnix \
 	mosh \
 	mtr \
 	nanopb-generator \
@@ -55,12 +50,7 @@ brew install --force \
 	nghttp2 \
 	node \
 	ntp \
-	opencascade \
-	openscad \
-	openssh \
-	openssl@3 \
 	pigz \
-	prusaslicer \
 	pv \
 	pwgen \
 	pyenv \
@@ -68,11 +58,8 @@ brew install --force \
 	rbenv-bundler \
 	ruby \
 	rustup-init \
-	skype \
-	smartmontools \
 	spectacle \
 	speedtest-cli \
-	telegram \
 	telnet \
 	tmux \
 	transmission \
@@ -86,12 +73,8 @@ brew install --force \
 	wxwidgets \
 	x265 \
 	yasm \
-	yt-dlp \
-	influxdb-cli
+	yt-dlp
 
-echo "Updating Python tools..."
-pip install --upgrade pip setuptools
-pip3 install --upgrade pip setuptools virtualenv
 
 echo "Updating Rust environment..."
 rustup-init -y
