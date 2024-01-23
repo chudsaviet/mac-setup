@@ -73,7 +73,8 @@ brew install --force \
 	wxwidgets \
 	x265 \
 	yasm \
-	yt-dlp
+	yt-dlp \
+	wireguard-tools
 
 
 echo "Updating Rust environment..."
