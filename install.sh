@@ -74,8 +74,8 @@ brew install --force \
 	x265 \
 	yasm \
 	yt-dlp \
-	wireguard-tools
-
+	wireguard-tools \
+	qrencode
 
 echo "Updating Rust environment..."
 rustup-init -y
