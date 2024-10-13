@@ -7,9 +7,6 @@ echo "Architecture is $(arch)"
 
 echo "All architectures:"
 
-echo "Adding taps..."
-brew tap homebrew/cask-fonts
-
 echo "Installing commandline utilities..."
 brew install --force \
 	automake \
