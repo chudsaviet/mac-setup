@@ -62,7 +62,6 @@ brew install --force \
 	nmap \
 	node \
 	ntp \
-	nvidia-nsight-systems \
 	ocrmypdf \
 	openjdk \
 	pigz \
@@ -120,3 +119,4 @@ echo "Dropbox"
 echo "Filmlab"
 echo "REW (speaker design)"
 echo "LedgerLive"
+echo "Nvidia nSight suite"
