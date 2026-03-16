@@ -7,6 +7,7 @@ echo "Architecture is $(arch)"
 
 echo "Adding brew taps..."
 brew tap homebrew-ffmpeg/ffmpeg
+brew tap sandreas/tap
 
 echo "Installing commandline utilities..."
 brew install --force \
