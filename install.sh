@@ -5,6 +5,9 @@ set -x
 
 echo "Architecture is $(arch)"
 
+echo "Installing Rosetta 2..."
+sudo softwareupdate --install-rosetta
+
 echo "Adding brew taps..."
 brew tap homebrew-ffmpeg/ffmpeg
 brew tap sandreas/tap
@@ -86,6 +89,9 @@ brew install --force \
 	wireshark-app \
 	yt-dlp
 
+echo "Setting GIT username and email..."
+git config --global user.name "Timofei Korostelev"
+git config --global user.email "timofei_public@dranik.dev"
 
 echo "Building FFMPEG from tap..."
 brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-fdk-aac --with-libvmaf
