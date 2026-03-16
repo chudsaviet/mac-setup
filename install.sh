@@ -5,13 +5,15 @@ set -x
 
 echo "Architecture is $(arch)"
 
-echo "All architectures:"
+echo "Adding brew taps..."
+brew tap homebrew-ffmpeg/ffmpeg
 
 echo "Installing commandline utilities..."
 brew install --force \
+	atomicparsley \
 	automake \
 	awscli \
-	balenaetcher \
+	axel \
 	bat \
 	binutils \
 	bison \
@@ -21,58 +23,53 @@ brew install --force \
 	cmake \
 	coreutils \
 	doxygen \
-	font-fira-code \
+	exiftool \
 	gawk \
+	gcloud-cli \
 	git \
 	git-lfs \
+	glib \
 	gnu-sed \
 	go \
-	homebrew-ffmpeg/ffmpeg/ffmpeg \
 	htop \
 	httpie \
 	imagemagick \
 	iterm2 \
 	jq \
-	keepingyouawake \
-	libsvg \
 	lsusb \
 	lzip \
+	m4b-tool \
 	make \
-	micro \
 	midnight-commander \
 	mosh \
 	mtr \
-	nanopb-generator \
+	nanopb \
 	nasm \
-	nghttp2 \
+	nmap \
 	node \
 	ntp \
+	ocrmypdf \
+	openjdk \
 	pigz \
+	pkgconf \
 	pv \
 	pwgen \
 	pyenv \
 	python \
-	rbenv-bundler \
-	ruby \
-	rustup-init \
-	spectacle \
+	rustup \
 	speedtest-cli \
 	telnet \
 	tmux \
-	transmission \
 	transmission-cli \
 	unzip \
 	visual-studio-code \
-	vlc \
-	vorbis-tools \
 	watch \
 	wget \
-	wxwidgets \
-	x265 \
-	yasm \
-	yt-dlp \
 	wireguard-tools \
-	qrencode
+	yt-dlp
+
+echo "Building FFMPEG from tap..."
+brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-fdk-aac --with-libvmaf
 
 echo "Updating Rust environment..."
 rustup-init -y
