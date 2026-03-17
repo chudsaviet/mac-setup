@@ -6,7 +6,7 @@ set -x
 echo "Architecture is $(arch)"
 
 echo "Installing Rosetta 2..."
-sudo softwareupdate --install-rosetta
+sudo softwareupdate --install-rosetta --agree-to-license
 
 echo "Adding brew taps..."
 brew tap homebrew-ffmpeg/ffmpeg
@@ -33,6 +33,7 @@ brew install --force \
 	eqmac \
 	exiftool \
 	firefox \
+	font-fira-code \
 	foobar2000 \
 	gawk \
 	gcloud-cli \
@@ -93,7 +94,12 @@ git config --global user.name "Timofei Korostelev"
 git config --global user.email "timofei_public@dranik.dev"
 
 echo "Building FFMPEG from tap..."
+brew remove --ignore-dependencies ffmpeg || true
 brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-fdk-aac --with-libvmaf
+
+echo "Cleaning brew..."
+brew autoremove
+brew cleanup
 
 echo "Updating Rust environment..."
 rustup-init -y
